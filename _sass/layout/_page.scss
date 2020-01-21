@@ -72,23 +72,16 @@ html,
   display: none;
 }
 
-.page__sidebar {
-  z-index: map-get($z-indexes, sidebar);
-  display: block;
-  width: 80%;
-  max-width: map-get($layout, sidebar-width);
-  height: 100%;
-  background-color: $background-color;
-  @include split-line(right);
-  @include transition(transform map-get($animation, duration));
-  @include overflow(auto);
-  .sidebar-toc {
-    padding: map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 4) map-get($spacers, 4);
-  }
-}
-.sidebar-button {
-  @include clickable($text-color-d, rgba($main-color-3, .75));
-}
+
+
+
+
+
+
+
+
+
+
 
 .page__mask {
   @include modal(map-get($z-indexes, mask));

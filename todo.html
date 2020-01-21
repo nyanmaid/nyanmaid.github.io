@@ -1,0 +1,18 @@
+---
+layout: articles
+title: Todo
+sidebar: true
+---
+
+<h3>To add a todo list, write a post with "todo" tag.</h3>
+<ul>
+{% for post in site.posts %}
+{% assign t = post.tags | downcase %}
+{% if t contains "todo" %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
